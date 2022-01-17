@@ -1,18 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, } from "react-native"
+import styles from "./styletitle";
 
 export default function Title(){
 
-    const page = StyleSheet.create({
-        title: {
-            color: "red",
-            fontWeight: "bold"
-        },
-    })
-
     return(
-        <View>
-            <Text style={page.title}>ONEBITHEALTH</Text>
+        <View style={styles.boxTitle}>
+            <Text style={styles.textTitle}>ONEBITHEALTH</Text>
         </View>
     );
 }
